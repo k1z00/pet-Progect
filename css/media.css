@@ -18,7 +18,8 @@
     position: absolute;
     margin-top: 15px;
     border-radius: 18px;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
   }
 }
 
@@ -144,11 +145,7 @@
 
 
 @media screen and (max-width: 650px) {
-    .section_info {
-      max-width: 450px;
-      max-height: 300px;
-      justify-content: center;
-    }
+    
     .main {
       max-width: 450px;
       margin: auto;
@@ -165,16 +162,27 @@
     .section_info_btn {
       width: 130px;
     }
-  
     .span-info {
-      width: 35px;
-      cursor: pointer;
-    }
+        width: 35px;
+        cursor: pointer;
+      }
+  
     .section_info{
         display: block;
+        max-width: 450px;
         max-height: 550px;
       }
       .section_info_items{
         margin-left: 20px;
       }
+  }
+
+
+  @media screen and (max-width: 450px) {
+    .section_info_items {
+        width: 289px;
+    }
+    .navbar {
+        justify-content: center;
+    }
   }
