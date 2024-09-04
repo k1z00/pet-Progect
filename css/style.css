@@ -1,41 +1,55 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-}
-.navbar{
-    display: flex;  
-    background-color: rgb(204, 193, 193);
-    background-size: cover;
-    align-items: center;  
-    width: 100%;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-}
-.nav_items{
-    display: flex;     
-    max-width: 1600px;   
-    align-items: center;  
-    margin: auto;  
-    padding: 5px 0px 5px 0px;
-    
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #5cdb95;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
+/*Навигрционная панель*/
 
-.nav_items{
-  display: flex; 
+.navbar {
+  display: flex;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  align-items: center;
+  max-width: 100%;
+  background-color: #05386b;
+}
+.nav_items {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 5px 0px 10px 0px;
+}
+
+.nav_items {
+  display: flex;
   justify-content: space-around;
   width: 80%;
+  color: aliceblue;
+  font-weight: 400;
 }
 
-.nav_item_text{display: flex;}
+.nav_item_text {
+  display: flex;
+}
 
+.nav-text {
+  padding-right: 100px;
+  cursor: pointer;
+}
+.nav-text:last-child {
+  padding-right: 0px;
+}
 
-.icons img{
+.icons img {
   width: 50px;
   margin-top: 3px;
-  
 }
 
+/*Бургер навигационной панели*/
 
 .hamburger {
   display: none;
@@ -51,63 +65,120 @@ body{
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  background-color: #333;
+  background-color: aliceblue;
   transition: all 0.3s ease;
 }
 
-/*  Стили для .hamburger.active */
 .hamburger.active .bar {
   background-color: #fff;
   transform: rotate(45deg);
   position: relative;
 }
 
+/*Input Навигационно панели*/
 
+.nav_search {
+  display: flex;
+  border: 1px solid #84cca0;
+  border-radius: 30px;
+  padding: 10px;
+  height: 20px;
+  background-color: #edf5e1;
+}
 
-
-.nav-text{
-  padding-right: 100px;
+.search-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  order: 1;
   cursor: pointer;
 }
-.nav-text:last-child{padding-right: 0px;}
 
-
-
-
-
-
-.nav_search{  
-    display: flex;
-    border: 1px solid rgb(15, 15, 15);
-    border-radius: 30px;
-    padding: 10px;
-    height: 20px;
-    background-color: rgb(201, 195, 195);
+.search-field {
+  width: 200px;
+  border: 0;
+  background-color: #edf5e1;
+  color: rgb(15, 15, 15);
+  outline: none;
 }
 
-  .search-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    order: 1;
-    cursor: pointer;
-    
-  }
+input.search-field::placeholder {
+  color: rgb(2, 135, 252);
+}
 
-  
-  .search-field {
-    width: 200px;
-    border: 0;
-    background-color: rgb(201, 195, 195);
-    color: rgb(15, 15, 15);
-    outline: none;}
+.search-field:focus {
+  outline: none;
+}
 
-    input.search-field::placeholder {
-        color: rgb(58, 55, 55); 
-      }
-  
-  .search-field:focus {
-    outline: none;
-  }
-  
- 
+/*Секция информации обо мне*/
+
+.main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section_info {
+  margin-top: 110px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #05386b;
+  height: 700px;
+  color: aliceblue;
+}
+
+.section_info_img img {
+  width: 80%;
+  height: 80%;
+  border-radius: 20px;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+}
+
+.section_info_img {
+  max-width: 500px;
+  margin-right: 10%;
+}
+
+.section_info_items h1 {
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.section_info_items h2 {
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+.info_contact {
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+.info_contact span {
+  margin-right: 20px;
+  padding-top: 10px;
+}
+.info_contact span:last-child {
+  margin-right: 0px;
+}
+
+.section_info_btn {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  margin-right: 20px;
+  background-color: #edf5e1;
+  cursor: pointer;
+}
+
+.section_info_btn:hover {
+  background-color: #94ecb6;
+}
+
+.span-info {
+  width: 50px;
+  cursor: pointer;
+}
