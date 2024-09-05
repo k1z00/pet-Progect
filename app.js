@@ -26,15 +26,15 @@ const infoContact = document.querySelector(".info_contact");
 
 const objInfo = [
   {
-    src: '/img/free-icon-vk-draw-logo-71839.png',
+    src: 'img/free-icon-vk-draw-logo-71839.png',
     href: 'https://vk.com/id851485203'
   },
   {
-    src: '/img/free-icon-instagram-2190361.png ',
+    src: 'img/free-icon-instagram-2190361.png ',
     href: 'https://www.example.com/instagram'
   },
   {
-    src: '/img/free-icon-telegram-2111646.png',
+    src: 'img/free-icon-telegram-2111646.png',
     href: 'https://web.telegram.org/k/#@gftW21'
   }
 ];
