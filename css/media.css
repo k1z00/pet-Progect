@@ -88,6 +88,7 @@
 @media screen and (max-width: 950px) {
   .section_info {
     max-width: 600px;
+    max-height: 500px;
     justify-content: center;
   }
 
@@ -150,6 +151,7 @@
     .main {
       max-width: 450px;
       margin: auto;
+      max-height: 700px;
       
     }
   
@@ -182,7 +184,7 @@
   @media screen and (max-width: 450px) {
     .section_info_items {
        max-width: 289px;
-        max-height: 200px;
+        
     }
     .navbar {
         justify-content: center;
