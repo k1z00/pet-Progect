@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #5cdb95;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -11,29 +10,36 @@ body {
 
 .navbar {
   display: flex;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
-  background-size: cover;
+  background-color: #EAE7DC;
+  box-shadow: 0px -10px 15px rgba(0, 0, 0, 0.9);
+  display: flex; 
+  justify-content: center;
+  position: fixed; 
+  z-index: 10;
+  top: 0;
   align-items: center;
-  max-width: 100%;
-  background-color: #05386b;
+  width: 100%;
+  
 }
 .nav_items {
   display: flex;
   align-items: center;
   margin: auto;
   padding: 5px 0px 10px 0px;
+ 
 }
 
 .nav_items {
   display: flex;
   justify-content: space-around;
   width: 80%;
-  color: aliceblue;
+  color: #201b1b;
   font-weight: 200;
 }
 
 .nav_item_text {
   display: flex;
+  font-weight: 700;
 }
 
 .nav-text {
@@ -65,7 +71,7 @@ body {
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  background-color: aliceblue;
+  background-color: rgb(17, 17, 17);
   transition: all 0.3s ease;
 }
 
@@ -79,11 +85,11 @@ body {
 
 .nav_search {
   display: flex;
-  border: 1px solid #84cca0;
+  border: 1px solid #E98074;;
   border-radius: 30px;
   padding: 10px;
   height: 20px;
-  background-color: #edf5e1;
+  background-color: #EAE7DC;
 }
 
 .search-icon {
@@ -97,13 +103,13 @@ body {
 .search-field {
   width: 200px;
   border: 0;
-  background-color: #edf5e1;
+  background-color: #EAE7DC;
   color: rgb(15, 15, 15);
   outline: none;
 }
 
 input.search-field::placeholder {
-  color: rgb(2, 135, 252);
+  color: #E98074;
 }
 
 .search-field:focus {
@@ -111,19 +117,25 @@ input.search-field::placeholder {
 }
 
 /*Секция информации обо мне*/
+.main1{
+  max-width: 100%;
+   max-height: 100%;
+   background-color: #EAE7DC;
+ }
 
-.main {
+.main__info {
   max-width: 1100px;
   margin: auto;
+  padding-top: 180px;
+  
 }
 
 .section_info {
-  margin-top: 110px;
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #05386b;
+  background-color: #3d3737;
   height: 600px;
   max-width: 1100px;
   color: aliceblue;
@@ -171,16 +183,29 @@ input.search-field::placeholder {
   border-radius: 20px;
   border: none;
   margin-right: 20px;
-  background-color: #94ecb6;
+  background-color: #EAE7DC;
   cursor: pointer;
+  transition: background-color 0.2s ease; 
+  overflow: hidden; /
 }
 
+
 .section_info_btn:hover {
-  background-color: #edf5e1;
+  opacity: 0.8;
 }
+
+
+.section_info_btn:active {
+  opacity: 0.6;
+  transform: scale(0.95); 
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
 
 .span-info {
   width: 50px;
   cursor: pointer;
   
 }
+
+
