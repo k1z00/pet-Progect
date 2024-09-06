@@ -30,7 +30,7 @@ const objInfo = [
     href: 'https://vk.com/id851485203'
   },
   {
-    src: 'img/free-icon-instagram-2190361.png ',
+    src: 'img/free-icon-instagram-2111463.png',
     href: 'https://www.example.com/instagram'
   },
   {

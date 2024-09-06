@@ -11,19 +11,21 @@
     display: flex;
     justify-content: space-between;
     max-width: 100%;
+    
   }
 
   .nav_item_text.active {
     display: block;
     position: absolute;
-    margin-top: 20px;
+    margin-top: 10px;
     padding-left: 10px;
     width: 70px;
     border-radius: 5px;
-    background-color: #e0d3d3;
-    color: black;
-    font-weight: 400;
+    color: #ec5c4c;
+    border-bottom: #E98074 solid 2px;
+    font-weight: 500;
   }
+  
 }
 
 
@@ -200,5 +202,66 @@
     
     .navbar {
         justify-content: center;
+    }
+  }
+
+
+  @media screen and (max-width: 1000px) {
+    .container__card_skills{
+      max-width: 70%;
+    }
+    .card_skills {
+    margin-left: 25px;
+    border-bottom: #E98074 solid 1px ;
+    max-width: 100px;
+    }
+    .card_skills img {
+      max-width: 70px
+    }
+  }
+
+
+
+
+  @media screen and (max-width: 700px) {
+    .container__card_skills{
+      max-width: 70%;
+    }
+    .card_skills {
+    margin-left: 25px;
+    max-width: 100px;
+    margin: auto;
+    }
+    .card_skills:last-child {
+      margin-bottom: 20px;
+    }
+    .border {
+      margin:0px  auto 150px  ;
+    }
+    .card_skills img {
+      max-width: 70px;
+      
+    }
+
+    .container__card_skills{
+      grid-template-columns: repeat(2, 1fr);
+     
+    }
+  }
+
+
+
+
+  @media screen and (max-width: 700px) {
+    .container__card_skills{
+      max-width: 90%;
+    }
+
+    .border {
+      margin:0px  auto 110px  ;
+    }
+
+    .card_skills:last-child {
+      margin-bottom: 20px;
     }
   }
