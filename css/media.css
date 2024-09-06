@@ -28,6 +28,7 @@
 @media screen and (max-width: 950px) {
   .nav-text {
     padding-right: 30px;
+    
   }
   .nav-text:last-child {
     padding-right: 0px;
@@ -185,6 +186,9 @@
     .section_info_items {
        max-width: 289px;
         
+    }
+    .section_info{
+      margin-top: 80px;
     }
     .navbar {
         justify-content: center;
