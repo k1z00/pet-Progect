@@ -189,7 +189,7 @@
 
   @media screen and (max-width: 450px) {
     .section_info_items {
-       max-width: 289px;
+       max-width: 305px;
         
     }
     .main__info {
@@ -197,12 +197,16 @@
       
     }
     .section_info_btn:hover {
-      background-color: #8affb7;
+      background-color: #EAE7DC;
     }
-    
-    .navbar {
+     .section_info{
         justify-content: center;
     }
+    .section_info_btn{
+      margin-right: 20px;
+    } 
+
+
   }
 
 
@@ -247,21 +251,28 @@
       grid-template-columns: repeat(2, 1fr);
      
     }
+    .card_skills:last-child {
+      margin-bottom: 20px;
+    }
+    .border {
+      margin:0px  auto 110px  ;
+    }
+
+    .container__card_skills{
+      max-width: 90%;
+    }
+
   }
 
 
 
 
-  @media screen and (max-width: 700px) {
-    .container__card_skills{
-      max-width: 90%;
+  @media screen and (max-width: 450px) {
+   
+    .card_skills img {
+      max-width: 50px;
+      
     }
 
-    .border {
-      margin:0px  auto 110px  ;
-    }
-
-    .card_skills:last-child {
-      margin-bottom: 20px;
-    }
+   
   }

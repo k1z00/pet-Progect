@@ -26,7 +26,7 @@ const infoContact = document.querySelector(".info_contact");
 
 const objInfo = [
   {
-    src: 'img/free-icon-vk-draw-logo-71839.png',
+    src: 'img/free-icon-vk-3670055.png',
     href: 'https://vk.com/id851485203'
   },
   {
@@ -90,6 +90,16 @@ function getInfoIcons () {
 
   
 
+
+
+    const Skills = document.querySelector("#Skills");
+    const mySkils = document.querySelector(".main__skills");
+
+    Skills.addEventListener('click', () => {
+      mySkils.scrollIntoView({
+      behavior: 'smooth'
+      });
+    });
 
 
 
