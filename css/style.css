@@ -225,6 +225,7 @@ input.search-field::placeholder {
 .main__skills{
   max-width: 1300px;
   margin: auto;
+  margin-bottom: 200px;
 }
 
 
@@ -251,7 +252,7 @@ input.search-field::placeholder {
 }
 
 .card_skills img {
-  max-width: 100px;
+  max-width: 80px;
   padding-top: 20px;
 
 }
@@ -264,4 +265,58 @@ input.search-field::placeholder {
 
 .text__skills{
   text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.main__project{
+  max-width: 1400px;
+  margin: auto;
+}
+
+.container_project{
+  text-align: center;
+}
+
+.tittle_project{
+ margin-bottom: 100px;
+}
+.items_card_project{
+  background-color: #9e9b8b;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.nav_project{
+  margin-right: 10px;
+  max-width: 50px;
+}
+
+.item_project{
+  margin-bottom: 20px;
+  padding-top: 100px;
+
+}
+
+
+.item_project img{
+ max-width: 700px;
+ margin-bottom: 20px;
+} 
+
+.item_project p{
+  max-width: 700px;
+  margin: auto;
+} 
+
+
+.nav_project:last-child{
+  margin-right: 0px;
 }

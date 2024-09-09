@@ -215,12 +215,13 @@
       max-width: 70%;
     }
     .card_skills {
-    margin-left: 25px;
+    margin: auto;
     border-bottom: #E98074 solid 1px ;
-    max-width: 100px;
+    max-width: 70px;
     }
     .card_skills img {
       max-width: 70px
+      
     }
   }
 
