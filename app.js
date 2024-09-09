@@ -1,3 +1,9 @@
+
+
+
+
+
+
 /*Бургер*/
 const hamburger = document.querySelector(".hamburger");
 const navItems = document.querySelector(".nav_item_text");
@@ -29,9 +35,13 @@ const objInfo = [
   },
 ];
 
+
+
 function getApend(data, time) {
   return data.appendChild(time);
 }
+
+
 
 let iconsAdded = false;
 function getInfoIcons() {
@@ -76,13 +86,26 @@ buttonInfo.addEventListener("click", () => {
 
 
 
+
+
+
 const Skills = document.querySelector("#Skills");
 const mySkils = document.querySelector(".text__skills");
+const muProgects = document.querySelector(".main__project");
+const Projects = document.querySelector("#Projects");
 
 Skills.addEventListener('click', () => {
-  const offset = 80; 
+  const offset = 85; 
   window.scrollTo({
     top: mySkils.offsetTop - offset, 
+    behavior: 'smooth'
+  });
+});
+
+Projects.addEventListener('click', () => {
+  const offset = 85; 
+  window.scrollTo({
+    top: muProgects.offsetTop - offset, 
     behavior: 'smooth'
   });
 });
@@ -93,28 +116,54 @@ Skills.addEventListener('click', () => {
 
 
 
+
+
+
+
+
+
+
+
+
 const imgProject = document.querySelector(".img_progect");
-const textProject = document.querySelector(".text_project");
+const h2Project = document.querySelector(".h2_project");
+const textContentProject = document.querySelector(".text_content_project");
 const arrow1 = document.querySelector("#Arow1");
 const arrow2 = document.querySelector("#Arow2");
 
 const objProject = [
   {
-    src: "img/free-icon-vk-3670055.png",
-    href: "https://vk.com/id851485203",
-    text: "проект 1",
+    src: "img/GgpBQdVJpR4.jpg",
+    href: "https://k1z00.github.io/pet-Progect/",
+    h2: "проект 1",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem consectetur harum temporibus beatae, culpa tempora odit alias fugiat ducimus perferendis, eveniet dolorum ipsam, necessitatibus corrupti quibusdam deleniti! Veniam, quia maxime.",
   },
   {
-    src: "img/free-icon-instagram-2111463.png",
+    src: "img/GgpBQdVJpR4.jpg",
     href: "https://www.example.com/instagram",
-    text: "проект 2",
+    h2: "проект 2",
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, reprehenderit corporis animi, aliquam vero maxime, autem hic delectus nisi dolor sunt doloremque odio eveniet rerum laborum? Mollitia deserunt impedit at.",
   },
   {
-    src: "img/free-icon-telegram-2111646.png",
+    src: "img/GgpBQdVJpR4.jpg",
     href: "https://web.telegram.org/k/#@gftW21",
-    text: "проект 3",
+    h2: "проект 3",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quasi voluptas, voluptates inventore quas, distinctio dolore architecto ratione neque eum optio eligendi perspiciatis asperiores tempore beatae accusantium quis excepturi explicabo.",
   },
 ];
+
+
+
+
+function updateProject(newIndex) {
+  currentIndex = newIndex;
+  imgProject.src = objProject[currentIndex].src;
+  h2Project.textContent = objProject[currentIndex].h2;
+  textContentProject.textContent = objProject[currentIndex].text;
+  linkElement.href = objProject[currentIndex].href;
+}
+
+
 
 const linkElement = document.createElement("a");
 
@@ -122,12 +171,6 @@ imgProject.appendChild(linkElement);
 
 let currentIndex = 0;
 
-function updateProject(newIndex) {
-  currentIndex = newIndex;
-  imgProject.src = objProject[currentIndex].src;
-  textProject.textContent = objProject[currentIndex].text;
-  linkElement.href = objProject[currentIndex].href;
-}
 
 updateProject(0);
 
@@ -142,3 +185,5 @@ arrow1.addEventListener("click", () => {
 imgProject.addEventListener("click", () => {
   window.open(linkElement.href, "_blank");
 });
+
+

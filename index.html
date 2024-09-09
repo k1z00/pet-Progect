@@ -29,7 +29,7 @@
           </button>
           <div class="nav_item_text">
             <p class="nav-text" id="Skills">Skills</p>
-            <p class="nav-text">Projects</p>
+            <p class="nav-text" id="Projects" >Projects</p>
             <p class="nav-text">Contact</p>
           </div>
         </div>
@@ -114,8 +114,14 @@
           <h1 class="tittle_project">Мои проекты</h1>
           <div class="items_card_project">   
             <div class="item_project">
-              <img src="" alt="" class="img_progect">
-              <p class="text_project"></p> 
+              <div class="span_project">
+                <h2 class="h2_project"></h2>
+                <p class="text_content_project"></p>
+                
+              </div>   
+               <div class="img_projects">
+                <img src="" alt="" class="img_progect">  
+               </div>
             </div>  
         <div class="navs_project">
           <img src="img/arrow-left_icon-icons.com_72376.svg" alt="" class="nav_project" id="Arow1">
@@ -126,6 +132,32 @@
         </div>
       </div>
     </main>
+    <footer class="footer">
+      <div class="massage__email">     
+      <form action="" class="form">
+        <h1>Отправьте мне сообщение на email</h1>
+        <div class="footer__name">
+          <h2>Имя</h2>
+          <input type="text" id="name" name="name" placeholder="Введите ваше имя...">
+        </div>
+        <div class="footer__email">
+          <h2>Email</h2>
+          <input type="email" id="email" name="email" placeholder="Введите ваш email..." >
+        </div>
+           <div class="footer__messege">
+            <h2>Сообщение</h2>
+            <textarea name="message" id="message" placeholder="Введите ваше сообщение..."></textarea>
+           </div>  
+           <div class="radio">
+            <input type="radio" id="radio" name="radio" >
+            <p>Даю свое согласие на обработку данных</p>
+           </div>
+           <button class="button-message">Отправить</button>   
+
+      </form>
+    </div>
+    </footer>
   </body>
   <script src="app.js"></script>
+  
 </html>
