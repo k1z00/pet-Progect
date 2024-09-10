@@ -325,6 +325,7 @@
       flex-direction: column;
       max-width: 500px; 
       height: 500px;
+      margin-bottom: 10px;
     }
     .span_project{
       height: 45%; 
@@ -353,13 +354,16 @@
      max-width: 90%;
     }
     .nav_project{
-      max-width: 30px;
+      max-width: 30px;  
     }
     .tittle_project{
       margin-bottom: 39px;
     }
     .main__skills{
       margin-bottom: 100px;
+    }
+    #Arow1{
+      margin-right: 10px;
     }
   }
 
@@ -387,4 +391,8 @@
    #message{
     height: 70px;
    }
+   .form{
+    padding-left: 50px;
+  }  
+
   }
