@@ -5,6 +5,11 @@ body {
   font-weight: 300;
   font-style: normal;
   background-color: #EAE7DC;
+
+}
+
+h1{
+  font-weight: 400;
 }
 
 /*Навигрционная панель*/
@@ -310,7 +315,7 @@ input.search-field::placeholder {
 }
 
 .tittle_project{
- margin-bottom: 90px;
+ margin-bottom: 40px;
 }
 
 
@@ -354,7 +359,6 @@ input.search-field::placeholder {
   align-items: center;
   background-color: #dfdace;
   border-radius: 15px;  
-  border: solid 1px;
 }
 
 .h2_project{
@@ -394,14 +398,6 @@ box-shadow: 3px 3px 3px  rgba(0, 0, 0, 0.9);
 
 
 
-
-
-
-
-
-
-
-
 .footer{
   display: block; 
   background-color: #d1cdc1;
@@ -410,7 +406,7 @@ box-shadow: 3px 3px 3px  rgba(0, 0, 0, 0.9);
   max-width: 1300px;
   margin:auto;
   padding-bottom: 30px;
-  padding-top: 20px;
+  padding-top: 5px;
  
 }
 

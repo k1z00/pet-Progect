@@ -93,6 +93,8 @@ const Skills = document.querySelector("#Skills");
 const mySkils = document.querySelector(".text__skills");
 const muProgects = document.querySelector(".main__project");
 const Projects = document.querySelector("#Projects");
+const Message = document.querySelector("#Message");
+const footer = document.querySelector(".footer");
 
 Skills.addEventListener('click', () => {
   const offset = 85; 
@@ -111,7 +113,13 @@ Projects.addEventListener('click', () => {
 });
 
 
-
+Message.addEventListener('click', () => {
+  const offset = 80; 
+  window.scrollTo({
+    top: footer.offsetTop - offset, 
+    behavior: 'smooth'
+  });
+});
 
 
 
